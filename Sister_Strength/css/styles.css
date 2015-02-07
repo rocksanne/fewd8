@@ -1,0 +1,322 @@
+/* ==========================================================================
+   Admin CSS
+   ========================================================================== */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/* ==========================================================================
+   Home Page Styles
+   ========================================================================== */
+
+.site-wrapper {
+	margin: 0 auto;
+	background: #FFF;
+	max-width: 55.5em;
+	padding: 3em;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1;
+}
+
+a:link {
+    text-decoration: none;
+    color: #12a0c3;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #acd181;
+}    
+
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
+
+.hamburger {
+	float: right;
+	display: none;
+	font-size: 4em;
+	margin: .25em;
+	text-decoration: none;
+	color: #097aa3;
+}
+
+.logo {
+	float: left;
+	margin-top: 1em;
+}
+
+.ribbon {
+	float: right;
+	margin-top: 3.75em;
+}
+
+.header{
+	height: 350px;
+}
+
+.header-bgrnd {
+	background: -webkit-linear-gradient(left, white , #dcf1f6); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, white, #dcf1f6); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, white, #dcf1f6); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, white , #dcf1f6); /* Standard syntax */
+	height: 145px;
+}
+
+nav {
+	padding: 2.5em 0em 3.5em 0em;
+}
+
+.menu-main,
+.menu-footer {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+
+.menu-main li {
+	display: inline;
+	margin: 0px;
+	float: left;
+}
+
+.menu-main a {
+	background: #097aa3;
+	font-family: 'Varela Round', sans-serif;
+	color: #FFF;
+	padding: 8px 42px;
+	text-decoration: none;
+}
+
+.menu-main2 a {
+	background: #12a0c3;
+}
+
+.menu-main a:hover {
+	color: #FFF;
+	background-color: #acd181;
+}
+
+aside {
+	float: right;
+	border-left: 2px dotted #bae9f4;
+	padding-left: 1.5em;
+}
+
+section {
+	float: left;
+	padding: 0em 0em .5em 0em;
+	max-width: 32em;
+}
+
+.block-heading {
+	background: #dcf1f6;
+	margin-top: 28px;
+	color: #12a0c3;
+	padding: 10px 0px 8px 18px;
+	font-size: 14px;
+}
+
+.block-copy { 
+	font-size: 15px;
+	padding: 0px 0px 0px 20px;
+	line-height: 24px;
+	color: #6B615B;
+	text-decoration: none;
+}
+
+.block-copy a {
+	color: #12a0c3;
+}
+
+.block-copy a:hover {
+    color: #acd181;
+}	
+
+.menu-footer {
+	margin-bottom: 20px;
+	font-size: 12px;
+	padding: 10px 0px 10px 10px;
+	width: 79em;
+	background: #12a0c3;
+	text-decoration: none;
+	max-width: 66em;
+}
+
+.menu-footer li {
+	display: inline;
+}	
+
+.menu-footer a {
+	color: #FFF;
+}
+
+.menu-footer a:hover {
+    color: #acd181;
+}	
+
+.menu-footer li::after {
+	content: ' | ';
+	color: #FFF;
+}
+
+.menu-footer li:last-child::after {
+	content: ' ';
+}
+
+.copyright {
+	font-size: 10px;
+	color: #6B615B;
+	float: left;
+}
+
+/* ==========================================================================
+   Page Styles
+   ========================================================================== */
+
+.body-heading {
+	background: #dcf1f6;
+	color: #12a0c3;
+	padding: 10px 0px 8px 18px;
+	font-size: 14px;
+	margin-top: 0px;
+}
+
+.body-copy { 
+	font-size: 15px;
+	padding: 0px 0px 0px 20px;
+	line-height: 24px;
+	color: #6B615B;
+	text-decoration: none;
+}
+
+.body-copy li {
+	font-size: 15px;
+	line-height: 24px;
+	color: #6B615B;
+	margin-left: 18px;
+}
+
+.caption {
+	font-size: 12px;
+	color: #6B615B;
+	margin-left: 18px;
+	padding-bottom: 25px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.button a {
+	background: #acd181;
+	color: #FFF;
+	padding: 8px 8px 6px 10px;
+	font-size: 13px;
+	margin-top: 40px;
+	margin-left: 22px;
+	width: 100px;
+}
+
+/* ==========================================================================
+   Mobile Styles
+   ========================================================================== */
+
+@media screen and (max-width: 800px) {
+	.site-wrapper {
+		padding: 1.5em;
+	}
+
+	.hamburger {
+		display: inline-block;
+		margin-top: 40px;
+	}
+
+	header {
+		margin-bottom: 1.75em;
+	}
+
+	.header-bgrnd {
+		height: auto;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 80%;
+	}
+
+	.logo img {
+		display: inline-block;
+		float: left;
+/*		margin-top: -4.75em;*/
+		max-width: 95%;
+	}
+
+	.ribbon img {
+		display: none;
+	}
+
+	nav {
+		padding: 0;
+	}
+	
+	.menu-main {
+		display: none;
+		margin-bottom: 1.75em;
+	}
+
+	.menu-main li {
+		display: block;
+		margin: 0;
+		width: 100%;
+	}
+
+	.menu-main a {
+		display: block;
+		padding: 8px 100px 8px 100px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.menu-main2 a {
+		padding: 8px 100px 8px 100px;
+	}
+
+	aside {
+		display: none;
+	}
+
+	aside img {
+		display: none;
+	}
+
+	.menu-footer {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+		.logo img {
+			width: 80%;
+		}
+}
